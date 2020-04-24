@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.cdk-virtual-scroll-orientation-vertical .cdk-virtual-scroll-content-wrapper{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+.cdk-virtual-scroll-orientation-horizontal .cdk-virtual-scroll-content-wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr 1fr ;
+    justify-content: center;
+    align-content: center;
+}

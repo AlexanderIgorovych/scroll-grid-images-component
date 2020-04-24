@@ -1,0 +1,6 @@
+
+<button *ngIf="displayOrientation === 'vertical'" (click)="changeOrientation()">Landscape</button>
+<button *ngIf="displayOrientation === 'horizontal'" (click)="changeOrientation()">Vertical</button>
+<cdk-virtual-scroll-viewport (scrolledIndexChange)="getMoreObj()"  itemSize="30" [orientation]="displayOrientation" class="example-viewport" [ngClass]="displayOrientation === 'horizontal'?'landscape':''">
+  <div [style.background]="parseUrl(item.di_image)" *cdkVirtualFor="let item of listOfObjects | async | slice: 0 : lengthOfShowedObjects " class="example-item"><p>{{item.title}}</p></div>
+</cdk-virtual-scroll-viewport>

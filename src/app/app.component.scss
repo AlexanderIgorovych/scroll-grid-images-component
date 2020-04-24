@@ -1,0 +1,31 @@
+
+.example-viewport {
+    margin: auto;
+    width: 700px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .example-item {
+    margin: 25px 5px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+/*     background: url('https://www.experiencesiouxfalls.com/assets/uploads/general/Sioux_Falls_Bicycle_Company.jpg'); */
+    p{
+        align-self: center;
+        font-size: 24px;
+    }
+  }
+  .landscape{
+    width: 1000px;
+    height: 700px;
+    .example-item {
+        margin: 0 25px;
+      }
+}
